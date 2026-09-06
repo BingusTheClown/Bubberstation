@@ -31,7 +31,7 @@
 
 	return values
 
-/datum/preference/choiced/species/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/prefs)
+/datum/preference/choiced/species/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	target.set_species(value, icon_update = FALSE, pref_load = FALSE, override_features = prefs?.features.Copy(), override_mutantparts = prefs?.mutant_bodyparts.Copy(), override_markings = prefs?.body_markings.Copy()) // SKYRAT EDIT - Customization
 
 	//SKYRAT EDIT ADDITION
