@@ -57,6 +57,7 @@
 	var/infectable_biotypes = MOB_ORGANIC //if the disease can spread on organics, synthetics, or undead
 	var/process_dead = FALSE //if this ticks while the host is dead
 	var/copy_type = null //if this is null, copies will use the type of the instance being copied
+	var/bypasses_disease_recovery = FALSE // Does it skip self recovery process, such as event diseases // BUBBER EDIT ADDITION - DISEASE OUTBREAK UPDATES
 	var/half_stage = FALSE // Acts as a counter for half stages
 
 /datum/disease/Destroy()

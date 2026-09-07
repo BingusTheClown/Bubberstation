@@ -34,6 +34,7 @@
 		return FALSE
 	/// Special exemptions
 	if(HAS_MIND_TRAIT(mob, TRAIT_HIDE_THINKING_INDICATOR))
+		return FALSE
 	/* BUBBER EDIT REMOVAL BEGIN
 	if(isabductor(mob))
 		return FALSE

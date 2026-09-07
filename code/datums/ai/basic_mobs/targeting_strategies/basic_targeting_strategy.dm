@@ -67,8 +67,12 @@
 			if(our_controller.blackboard[BB_TREAT_UNCONSCIOUS_AS_HARDCRIT] && IS_UNCONSCIOUS(living_target))
 				checked_stat = max(checked_stat, HARD_CRIT)
 
-			if(checked_stat > our_controller.blackboard[minimum_stat_key])
+// BUBBER EDIT START - Adds flipped checks
+			if(!flip_stat_check && living_target.stat > our_controller.blackboard[minimum_stat_key])
 				return FALSE
+			if(flip_stat_check && living_target.stat < our_controller.blackboard[minimum_stat_key])
+				return FALSE
+// BUBBER EDIT END
 			if(target_wounded_key && our_controller.blackboard[target_wounded_key] && living_target.health == living_target.maxHealth)
 				return FALSE
 

@@ -81,6 +81,11 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 	var/old_lighting_corner_SW = lighting_corner_SW
 	var/old_lighting_corner_NW = lighting_corner_NW
 	var/old_directional_opacity = directional_opacity
+	//SKYRAT EDIT CHANGE
+	var/obj/effect/abstract/liquid_turf/old_liquids = liquids
+	if(lgroup)
+		lgroup.remove_from_group(src)
+	//SKYRAT EDIT END
 	var/old_rcd_memory = rcd_memory
 	var/old_explosion_throw_details = explosion_throw_details
 	var/old_opacity = opacity

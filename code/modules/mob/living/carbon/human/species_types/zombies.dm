@@ -157,8 +157,8 @@
 			oxy_per_second = regen_amount * 0.5, \
 			heals_wounds = TRUE, \
 		)
-
-	new_zombie.become_husk(id)
+	if(should_husk_victim) //Bubber edit - HFZ does not override our furries
+		new_zombie.become_husk(id) //Bubber edit - HFZ does not override our furries
 
 	RegisterSignal(new_zombie, COMSIG_SPECIES_GAIN, PROC_REF(zombie_species_changed))
 	RegisterSignal(new_zombie, COMSIG_LIVING_DEATH, PROC_REF(zombie_died_somehow))

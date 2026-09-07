@@ -273,12 +273,15 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 				our_case.department_account = our_case.buyer_account
 			/// SKYRAT EDIT ADDITION END
 			miscboxes[buyer].name = "goody case - purchased by [buyer]"
+		//BUBBER EDIT BEGIN // Populate the contents for purchased orders
+		misc_contents[buyer] = list()
 
 		for(var/datum/supply_order/our_order as anything in buying_account_orders)
 			for (var/item in our_order.pack.contains)
 				misc_contents[buyer] += item
 			misc_costs[buyer] += our_order.pack.cost
 			misc_order_num[buyer] = "[misc_order_num[buyer]]#[our_order.id] "
+		////BUBBER EDIT END
 
 	for(var/miscbox in miscboxes)
 		var/datum/supply_order/order = new/datum/supply_order()

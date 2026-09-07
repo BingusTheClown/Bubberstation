@@ -20,7 +20,7 @@
 			qdel(recipe)
 			continue
 
-		var/is_cooking = (recipe.category in GLOB.crafting_category_food) || (recipe.category in GLOB.crafting_category_food_skyrat)) // SKYRAT EDIT CHANGE - ORIGINAL: var/is_cooking = (recipe.category in GLOB.crafting_category_food)
+		var/is_cooking = (recipe.category in GLOB.crafting_category_food) || (recipe.category in GLOB.crafting_category_food_skyrat) // SKYRAT EDIT CHANGE - ORIGINAL: var/is_cooking = (recipe.category in GLOB.crafting_category_food)
 		recipe.reqs = sort_list(recipe.reqs, GLOBAL_PROC_REF(cmp_crafting_req_priority))
 
 		if(is_cooking)

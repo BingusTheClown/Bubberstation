@@ -19,6 +19,8 @@
 	var/use_radio_beeps_tts = FALSE
 	/// A list of sound overrides for emotes, which can play when the mask is worn on the mask slot
 	var/list/emote_sounds
+	/// The unique sound effect of dying while wearing this
+	var/unique_death
 
 /obj/item/clothing/mask/equipped(mob/living/equipper, slot)
 	. = ..()

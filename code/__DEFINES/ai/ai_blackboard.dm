@@ -147,9 +147,6 @@
 /// whether we can have fuck
 #define BB_FUCKS "can we fuck?"
 
-/// whether we can have fuck
-#define BB_FUCKS "can we fuck?"
-
 /// Minimum range to keep target within
 #define BB_RANGED_SKIRMISH_MIN_DISTANCE "BB_ranged_skirmish_min_distance"
 /// Maximum range to keep target within

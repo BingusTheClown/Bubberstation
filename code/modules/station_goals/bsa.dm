@@ -482,3 +482,4 @@ GLOBAL_VAR_INIT(bsa_unlock, FALSE)
 #undef BSA_Y_OFFSET
 #undef BSA_X_OFFSET_WEST
 #undef BSA_X_OFFSET_EAST
+*/

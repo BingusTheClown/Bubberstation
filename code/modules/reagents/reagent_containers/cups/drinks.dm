@@ -33,8 +33,11 @@
 	broken.mimic_broken(src, target, break_top)
 	post_smash(target, thrower, throwingdatum, broken)
 	qdel(src)
-	target.Bumped(B)
-	return B //BUBBERSTATION CHANGE: RETURNS THE BROKEN BOTTLE.
+	target.Bumped(broken) //BUBBERSTATION CHANGE: RETURNS THE BROKEN BOTTLE.
+	return broken //BUBBERSTATION CHANGE: RETURNS THE BROKEN BOTTLE.
+
+/obj/item/reagent_containers/cup/glass/proc/post_smash(atom/target, atom/thrower, datum/thrownthing/throwingdatum, obj/item/broken_bottle/broken)
+	return
 
 /obj/item/reagent_containers/cup/glass/bullet_act(obj/projectile/proj)
 	. = ..()
