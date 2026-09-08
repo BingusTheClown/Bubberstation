@@ -113,6 +113,7 @@
 	physical_status = PHYSICAL_ACTIVE,
 	mental_status = MENTAL_STABLE,
 	quirk_notes,
+	security_note, // BUBBER EDIT
 	// SKYRAT EDIT START - RP Records
 	past_general_records = "",
 	past_medical_records = "",
@@ -128,6 +129,7 @@
 	src.physical_status = physical_status
 	src.mental_status = mental_status
 	src.quirk_notes = quirk_notes
+	src.security_note = security_note //Bubber EDIT
 	// SKYRAT EDIT START - RP Records
 	src.past_general_records = past_general_records
 	src.past_medical_records = past_medical_records
