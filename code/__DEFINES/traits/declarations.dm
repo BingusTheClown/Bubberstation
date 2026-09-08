@@ -1053,7 +1053,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_STRONG_STOMACH "strong_stomach"
 #define TRAIT_VEGETARIAN "trait_vegetarian"
 #define TRAIT_KEEN_NOSE "keen_nose"
-#define TRAIT_CRIMINAL_UNDERWORLD "criminal_underworlder" //BUBBER ADDITION
 
 /// The mob has a variety of catlike behaviors, like landing on their feet when falling or chasing pinpointers.
 #define TRAIT_CATLIKE_INSTINCT "catlike_grace"
